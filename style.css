@@ -1,0 +1,243 @@
+/* style.css */
+html{
+	background-image-color: #c71585;
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font-family: Verdana, Arial;
+	font-size: 14px;
+}
+
+body > #container{
+	height: auto;
+}
+
+#container{
+	min-height: 100%;
+	width: 95%;
+	margin: 0 auto;
+	background-color: #c71585;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	padding: 0px;
+}
+
+#header{
+	margin-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+#menu{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#main{
+	overflow: hidden;
+	margin-bottom: 15px; 
+}
+
+#contents{
+	float: left;
+	width: 70%;
+}
+
+#sidebar{
+	float: right;
+	width: 28%;
+	margin-left: 2%;
+}
+
+#footer{
+	font-size: 12px;
+	color: #ccc;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding: 10px 0 20px;
+}
+
+.dropmenu{
+	*zoom: 1;
+	list-style-type: none;
+	width: 100%;
+	margin: 5px auto 30px;
+	padding: 0;
+}
+.dropmenu:before, .dropmenu:after{
+	content: "";
+	display: table;
+}
+.dropmenu:after{
+	clear: both;
+}
+.dropmenu li{
+	position: relative;
+	width: 25%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.dropmenu li a{
+	display: block;
+	margin: 0;
+	padding: 15px 0 11px;
+	background: #8a9b0f;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	text-decoration: none;
+}
+.dropmenu li ul{
+	list-style: none;
+	position: absolute;
+	z-index: 9999;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+.dropmenu li ul li{
+	width: 100%;
+}
+.dropmenu li ul li a{
+	padding: 13px 15px;
+	border-top: 1px solid #7c8c0e;
+	background: #6e7c0c;
+	text-align: left;
+}
+.dropmenu li:hover > a{
+	background: #6e7c0c;
+}
+.dropmenu li a:hover{
+	background: #616d0b;
+}
+#normal li ul{
+	display: none;
+}
+#normal li:hover ul{
+	display: block;
+}
+/*
+#menu ul>li{
+	float: left;
+	width: 100px;
+	font-size: 13px;
+	text-align: center;
+	padding: 4px;
+	background: #ccc;
+	margin-right: 10px;
+	border-radius: 4px;
+	text-shadow: 0 1px 0 #fff;
+}
+
+#menu ul>li:hover{
+	background: #d43c32;
+}
+
+#menu ul>li>a{
+	text-decoration: none;
+	display: block;
+}
+*/
+h1{
+	font-size: 30px;
+}
+
+h2, h3{
+	font-weight: bolder;
+}
+
+h2{
+	font-size: 16px;
+	border-left: 5px solid #d43c32;
+	padding: 3px 0 3px 10px;
+	margin-bottom: 10px;
+}
+
+#header>h2{
+	border: none;
+}
+
+h3{
+	border-bottom: 1px solid #ccc;
+	padding: 3px 0;
+	margin-bottom: 10px;
+}
+
+p{
+	margin-bottom: 14px;
+}
+
+ul.news{
+	margin-bottom: 15px;
+}
+ul.news>li{
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 1px dotted #ccc;
+	background-color: rgba(128, 128, 128, 0.2);
+}
+ul.news>li:last-child{
+	border: none;
+}
+ul.news>li>img{
+	float: left;
+	width: 60px;
+	-moz-transition: -moz-transform 0.5s linear;
+	-webkit-transition: -webkit-transform 0.5s linear;
+	-0-transition: -o-transform 0.5s linear;
+	-ms-transition: -ms-transform 0.5s linear;
+	-moz-transition: transform 0.5s linear;
+}
+
+ul.news>li>img:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+ul.news>li>p{
+	margin-left: 70px;
+	font-size: 13px;
+}
+ul.news>ul>li>a{
+	text-decoration: none;
+	display: block;
+}
+
+div.sample{
+	float: right;
+	width: 66px;
+	margin-left: 10px;
+	position: relative;
+}
+div.sample>p{
+	font-size: 10px;
+}
+div.sample>img{
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.badge{
+	background: red;
+	color: white;
+	font-size: 10px;
+	padding: 2px 4px 3px;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+
+ul.submenu>li{
+	background-image: url("img/delta.jpg") no-repeat;
+	padding: 0 0 5px 20px;
+}
